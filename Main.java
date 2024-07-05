@@ -12,6 +12,8 @@ public class Main{
         names.add("Niel");
         names.add("Ludwig");
         System.out.println(names);
-
+        for(String temp: names){
+            System.out.println(temp);
+        }
     }
 }
