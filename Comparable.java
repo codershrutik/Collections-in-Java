@@ -1,6 +1,7 @@
+import java.lang.*;
 import java.util.*;
 
-class Name{
+class Name implements java.lang.Comparable<Name>{
     private String name;
 
     public String getName(){
@@ -14,6 +15,9 @@ class Name{
     }
     public String toString(){
         return name;
+    }
+    public int compareTo(Name obj){
+        return 0;
     }
 }
 public class Comparable {
