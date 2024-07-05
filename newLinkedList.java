@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class newLinkedList {
     public static void main(String[] args) {
@@ -21,18 +19,22 @@ public class newLinkedList {
         ArrayList<String> list2 = new ArrayList<>();
         list2.add("Google");
         list2.add("Microsoft");
-        list2.add("Google");
+        list2.add("Amazon");
+        list1.add("Shruti");
 
         System.out.println(list1);
         // System.out.println(list2);
-       new Main().printList(list1);
+        // new Main().printList(list1);
 
-        
+        list2.sort(null);
+        System.out.println(list2);
+        Collections.reverse(list2);
     }
 
     public void printList(List<String> list){
-        for(String name:list){
-            System.out.println(name);
+        Iterator<String> data = list.listIterator();
+        while(data.hasNext()){
+            System.out.println(data.next());
         }
     }
 
