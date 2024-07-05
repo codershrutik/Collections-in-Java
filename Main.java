@@ -15,5 +15,8 @@ public class Main{
         for(String temp: names){
             System.out.println(temp);
         }
+        System.out.println(names.get(3));
+        names.remove(1);
+        System.out.println(names);
     }
 }
