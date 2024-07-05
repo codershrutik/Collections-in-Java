@@ -8,15 +8,8 @@ public class Main{
         names.add("John");
         names.add("William");
         names.add("Harry");
-        names.add("Louis");
-        names.add("Niel");
-        names.add("Ludwig");
+        System.out.println(names.remove("Shruti"));
         System.out.println(names);
-        for(String temp: names){
-            System.out.println(temp);
-        }
-        System.out.println(names.get(3));
-        names.remove(1);
-        System.out.println(names);
+
     }
 }
